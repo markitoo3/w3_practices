@@ -38,9 +38,9 @@ div{
 }
 
 #cube1 {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   width: 400px;
   height: 400px;
   background-color: #181b1f;
@@ -85,33 +85,57 @@ div{
 #cube6 {
   width: 300px;
   height: 300px;
-  background-color: #4380c0;
+  background-color: #43c0b6;
 
 }
 
 #cube7 {
   width: 280px;
   height: 280px;
-  background-color: #45617e;
+  background-color: #45a19a;
 
 }
 
 #cube8 {
   width: 260px;
   height: 260px;
-  background-color: #32404e;
+  background-color: #3f7974;
 
 }
 
 #cube9 {
+  right: 0;
+  bottom: 0;
   width: 240px;
   height: 240px;
-  background-color: #262e36;
+  background-color: #375c59;
 
 }
 
 #cube10 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 220px;
   width: 220px;
-  background-color: #181b1f;
+  background-color: #253635;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid #201b10;
+}
+
+section button {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+
+  width: 200px;
+  height: 60px;
+  background-color: aliceblue;
+
+
 }
