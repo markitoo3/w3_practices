@@ -34,32 +34,163 @@ select {
 
 /* Reset CSS */
 
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.87);
+}
 
+h1 {
+  font-family: 'Supermercado One', cursive;
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-left: 40px;
+
+}
 
 section {
   align-items: center;
   min-height: 100vh;
   width: auto;
-  background-color: rgba(20, 61, 27, 0.404);
+  background-color: rgba(20, 61, 27, 0.527);
   border-bottom: 3px solid black;
-  text-align: center;
-
-  display: flex;
-  justify-content: center;
+ 
 }
 
-button {
-border: 3px solid black;
-}
 
-#box {
-  border: 3px solid black;
+section.background-holder {
+  height: 100vh;
+  overflow: hidden;
 }
 
 section.background-holder img {
+  position: absolute;
   display: block;
+  z-index: -1;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
-  background-size: contain;
+  object-fit: cover;
+   
+}
 
+section.background-holder button {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 40px 0;
+  transform: translateX(-50%);
+  background-color: aquamarine;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#username {
+  border: 3px solid black;
+}
+
+#password {
+  border: 3px solid black;
+}
+
+#paragraph p {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  padding: 80px;
+  margin: 0px auto;
+}
+
+#about {
+  min-height: unset;
+
+}
+
+#about article {
+  width: 100%;
+  max-width: 400px;
+  padding: 80px;
+  margin: 0px auto;
+}
+
+#about h2 {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 20px;
+}
+
+#services {
+  padding: 60px 0;
+  background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLW31t9VcKr8o6nAwa2fDc37MHu7ssjZDjzDmgnPvyVmccpAoIir2UbhSztu2H5xlt9JxEJRVahlgAGYRgoHqnB2gBXm8ynJYsAxu8BTxdea_4saNHdc2umRopC7LB4ZZjNi1UUk_HueVC7Txo_v65vmaA=w1250-h937-no?authuser=0);
+  background-size: cover;
+  background-position: center center;
+}
+
+#services ul {
+  width: 100%;
+  max-width: 800px;
+  padding: 80px 20px;
+  margin: 0px auto;
+  list-style: none;
+  background-color: rgba(95, 158, 160, 0.5);
+ 
+}
+
+#services ul li {
+  padding-bottom: 10px;
+}
+
+#services ul li h2,
+#services ul li p {
+  text-align: center;
+}
+
+#contact {
+  background-color: rgba(0, 105, 14, 0.541);
+}
+
+#contact form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  
+}
+
+#contact input,
+#contact label {
+  display: block;
+  width: 100%;
+}
+
+#contact label {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+#contact input {
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  background-color: cornsilk;
+  
+}
+
+#contact button {
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: aquamarine;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
