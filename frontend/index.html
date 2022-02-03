@@ -8,84 +8,92 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
 	<title>This is FRONTEND</title>
 </head>
 <body>
-	
+	<div id="root">
 
-	<section class="background-holder" id="welcome">
-		<img src="https://lh3.googleusercontent.com/2mMVdNegxFr4WiHgu2kG0Hq2HridukrVRbEeLqjAmFJ9RH0RGZnaf_yW09CuA2j1ryxRJuXTBtmcHUYjMMwTNJMD12dgR_WU_oVxLDLd0MtgouJzepN4HYQBs1JDg4-JCrOkeFFMPno=w2400" alt="kepecske">
+		<!-- SCM Music Player https://www.scmplayer.net -->
+		<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
+		data-config="{'skin':'skins/black/skin.css','volume':30,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Bankos - Te vagy','url':'https://www.youtube.com/watch?v=HfZL_UEmsnY'}]}" ></script>
+		<!-- SCM Music Player script end -->
+
 		
-		<button>Te vagy</button>
+
+		<section class="background-holder" id="welcome">
+			<img src="https://lh3.googleusercontent.com/2mMVdNegxFr4WiHgu2kG0Hq2HridukrVRbEeLqjAmFJ9RH0RGZnaf_yW09CuA2j1ryxRJuXTBtmcHUYjMMwTNJMD12dgR_WU_oVxLDLd0MtgouJzepN4HYQBs1JDg4-JCrOkeFFMPno=w2400" alt="kepecske">
+			
+			<button>Te vagy</button>
+			
+			<h1>Abécé</h1>
+		</section>
+
+		<section id="about">
+			<article>
+				<h2>Te vagy</h2>
+				<p>Ki tudja,<br>
+					talán csak te meg én,<br>
+					Mi vagyunk,<br>
+					kiket egy utcába terelnek <br>
+					és ahogy lennie kell: egymásra találunk. <br>
+					Hogyha tehetném engedném,<br>
+					szorítanám örökké a kezed de,<br>
+					mint minden ez is múlik: <br>
+					csak várom hogy az idő mikor telik le. <br>
+					Te lennél akiért bármivel, <br>
+					és hogyha együtt: semmi nem tud fékezni, <br>
+					mégis egyszer kisétálsz, <br>
+					és már hányszor sétáltatok ki. <br>
+					Várom ki lesz a párom, <br>
+					a zene, a város, barát, testvér? <br>
+					aki mögöttem: csak ez, <br>
+					ami a világon valamit is ér. <br>
+				</p>
+			</article>
+		</section>
+
+		<section id="services" class="container">
+			<ul>
+				<li>
+					<h2>Service 1</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis eveniet corrupti. Consectetur obcaecati repellendus dolores accusantium! Voluptas dolorum ipsum cumque vero, quis voluptatem quaerat pariatur placeat quia, labore deserunt?</p>
+				</li>
+				<li>
+					<h2>Service 2</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolore voluptates numquam ipsa sint, atque optio tempore, minima praesentium blanditiis asperiores, et laborum dolor magnam perspiciatis! Nulla expedita pariatur debitis.</p>
+				</li>
+				<li>
+					<h2>Service 3</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint expedita error nobis dolor, earum, fugit possimus molestiae numquam, dolores tenetur provident! Atque dignissimos minus soluta quod voluptas, maxime deleniti quis?</p>
+				</li>
+				<li>
+					<h2>Service 4</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed, debitis suscipit ab quasi beatae pariatur deserunt sunt eius omnis! Sed dolorem iure corrupti inventore. Maxime vero impedit harum porro.</p>
+				</li>
+				<li>
+					<h2>Service 5</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum facere debitis natus vitae culpa provident, nihil necessitatibus dicta tempora quidem. Sequi officia debitis corporis maiores ex et perferendis natus! Cum.</p>
+				</li>
+				<li>
+					<h2>Service 6</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto repellendus obcaecati in eos vel consectetur, autem aspernatur praesentium adipisci labore, voluptatibus ratione assumenda dolore doloribus et exercitationem velit vero culpa!
+					Quasi, ratione iste dolore blanditiis cum excepturi suscipit quam esse quibusdam quod repellendus repudiandae quisquam veritatis dolores aliquam, saepe accusantium deserunt dignissimos nam? Maxime repellendus amet perspiciatis nostrum adipisci recusandae.</p>
+				</li>
+			</ul>
+
+		</section>
+
+		<section id="contact">
+			<form>
+				<label for="username">Username</label><br>
+				<input type="text" id="username" placeholder="username" required><br>
+				<label for="password">Password</label><br>
+				<input type="text" id="password" placeholder="password" required><br>
+				<button>Sign In</button>
+			</form>
+		</section>
 		
-		<h1>Abécé</h1>
-	</section>
-
-	<section id="about">
-		<article>
-			<h2>Te vagy</h2>
-			<p>Ki tudja,<br>
-				talán csak te meg én,<br>
-				Mi vagyunk,<br>
-				kiket egy utcába terelnek <br>
-				és ahogy lennie kell: egymásra találunk. <br>
-				Hogyha tehetném engedném,<br>
-				szorítanám örökké a kezed de,<br>
-				mint minden ez is múlik: <br>
-				csak várom hogy az idő mikor telik le. <br>
-				Te lennél akiért bármivel, <br>
-				és hogyha együtt: semmi nem tud fékezni, <br>
-				mégis egyszer kisétálsz, <br>
-				és már hányszor sétáltatok ki. <br>
-				Várom ki lesz a párom, <br>
-				a zene, a város, barát, testvér? <br>
-				aki mögöttem: csak ez, <br>
-				ami a világon valamit is ér. <br>
-			</p>
-		</article>
-	</section>
-
-	<section id="services" class="container">
-		<ul>
-			<li>
-				<h2>Service 1</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis eveniet corrupti. Consectetur obcaecati repellendus dolores accusantium! Voluptas dolorum ipsum cumque vero, quis voluptatem quaerat pariatur placeat quia, labore deserunt?</p>
-			</li>
-			<li>
-				<h2>Service 2</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolore voluptates numquam ipsa sint, atque optio tempore, minima praesentium blanditiis asperiores, et laborum dolor magnam perspiciatis! Nulla expedita pariatur debitis.</p>
-			</li>
-			<li>
-				<h2>Service 3</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint expedita error nobis dolor, earum, fugit possimus molestiae numquam, dolores tenetur provident! Atque dignissimos minus soluta quod voluptas, maxime deleniti quis?</p>
-			</li>
-			<li>
-				<h2>Service 4</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed, debitis suscipit ab quasi beatae pariatur deserunt sunt eius omnis! Sed dolorem iure corrupti inventore. Maxime vero impedit harum porro.</p>
-			</li>
-			<li>
-				<h2>Service 5</h2>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum facere debitis natus vitae culpa provident, nihil necessitatibus dicta tempora quidem. Sequi officia debitis corporis maiores ex et perferendis natus! Cum.</p>
-			</li>
-			<li>
-				<h2>Service 6</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto repellendus obcaecati in eos vel consectetur, autem aspernatur praesentium adipisci labore, voluptatibus ratione assumenda dolore doloribus et exercitationem velit vero culpa!
-				Quasi, ratione iste dolore blanditiis cum excepturi suscipit quam esse quibusdam quod repellendus repudiandae quisquam veritatis dolores aliquam, saepe accusantium deserunt dignissimos nam? Maxime repellendus amet perspiciatis nostrum adipisci recusandae.</p>
-			</li>
-		</ul>
-
-	</section>
-
-	<section id="contact">
-		<form>
-			<label for="username">Username</label><br>
-			<input type="text" id="username" placeholder="username" required><br>
-			<label for="password">Password</label><br>
-			<input type="text" id="password" placeholder="password" required><br>
-			<button>Sign In</button>
-		</form>
-	</section>
-
-	
+	</div>
 </body>
 </html>
