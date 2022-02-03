@@ -35,43 +35,39 @@ select {
 /* Reset CSS */
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Supermercado One', cursive;
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.87);
+  background-color: #050f11;
 }
 
 h1 {
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Comforter', cursive;
   font-size: 100px;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.6);
   margin-top: 40px;
-  margin-left: 40px;
-
+  margin-left: 140px;
 }
 
 section {
-  align-items: center;
   min-height: 100vh;
-  width: auto;
-  background-color: rgba(20, 61, 27, 0.527);
-  border-bottom: 3px solid black;
- 
-}
+  width: 100%;
 
+}
 
 section.background-holder {
   height: 100vh;
   overflow: hidden;
+  box-shadow: 0 0 80px 80px #050f11 inset;
+
 }
 
 section.background-holder img {
   position: absolute;
   display: block;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  width: 100%;
+  padding: 10px 10px;
   height: 100vh;
+  width: 100%;
+  z-index: -1;
   object-fit: cover;
    
 }
@@ -81,15 +77,16 @@ section.background-holder button {
   display: block;
   bottom: 0;
   left: 50%;
-  width: 200px;
-  height: 60px;
-  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
   margin: 40px 0;
   transform: translateX(-50%);
-  background-color: aquamarine;
-  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  font-size: 20px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+
 }
 
 #username {
@@ -115,32 +112,38 @@ section.background-holder button {
 }
 
 #about article {
+  position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   padding: 80px;
-  margin: 0px auto;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #about h2 {
   text-align: justify;
-  text-justify: inter-word;
   padding-bottom: 20px;
 }
 
 #services {
   padding: 60px 0;
-  background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLW31t9VcKr8o6nAwa2fDc37MHu7ssjZDjzDmgnPvyVmccpAoIir2UbhSztu2H5xlt9JxEJRVahlgAGYRgoHqnB2gBXm8ynJYsAxu8BTxdea_4saNHdc2umRopC7LB4ZZjNi1UUk_HueVC7Txo_v65vmaA=w1250-h937-no?authuser=0);
+  background-image: url(https://lh3.googleusercontent.com/2mMVdNegxFr4WiHgu2kG0Hq2HridukrVRbEeLqjAmFJ9RH0RGZnaf_yW09CuA2j1ryxRJuXTBtmcHUYjMMwTNJMD12dgR_WU_oVxLDLd0MtgouJzepN4HYQBs1JDg4-JCrOkeFFMPno=w2400);
   background-size: cover;
   background-position: center center;
+  box-shadow: 0 0 80px 80px #050f11 inset;
+  padding: 30px 30px;
 }
 
 #services ul {
   width: 100%;
   max-width: 800px;
-  padding: 80px 20px;
-  margin: 0px auto;
+  padding: 40px 80px;
+  margin: 60px auto;
   list-style: none;
-  background-color: rgba(95, 158, 160, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(121,92,9, 0.5);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 35%, rgba(5,15,17,0.4) 100%);
  
 }
 
@@ -151,10 +154,16 @@ section.background-holder button {
 #services ul li h2,
 #services ul li p {
   text-align: center;
+
 }
 
 #contact {
-  background-color: rgba(0, 105, 14, 0.541);
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(5,15,17);
+  background: linear-gradient(180deg, rgba(5,15,17,1) 0%, rgba(5, 42, 0, 0.267) 100%);
 }
 
 #contact form {
@@ -169,28 +178,35 @@ section.background-holder button {
 #contact label {
   display: block;
   width: 100%;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #contact label {
-  font-size: 12px;
-  padding-bottom: 10px;
+  font-size: 20px;
+  padding-bottom: 0px;
 }
 
 #contact input {
   height: 40px;
   padding: 0 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 18px;
-  background-color: cornsilk;
+  background-color: rgba(255, 255, 255, 0.8);
   
 }
 
 #contact button {
-  width: 200px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: aquamarine;
-  font-size: 25px;
+  
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 40px 0;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  font-size: 20px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
